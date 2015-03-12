@@ -1,0 +1,60 @@
+
+<div id="curr-query">
+ <h3>Current Query Details</h3>
+ <p>&nbsp;
+ <table id="curr-query-form">
+  <tr>
+   <td class="td-name">Search Term:</td>
+   <td class="td-value" id="q11"></td>
+  </tr>
+  <tr>
+   <td class="td-name">Search Zone:</td>
+   <td class="td-value" id="z11"></td>
+  </tr>
+  <tr id="tr-title">
+   <td class="td-name">Title:</td>
+   <td class="td-value" id="title11"></td>
+  </tr>
+  <tr id="tr-author">
+   <td class="td-name">Author:</td>
+   <td class="td-value" id="author11"></td>
+  </tr>
+  <tr id="tr-range">
+   <td class="td-name">Date Range:</td>
+   <td class="td-value" id="dateRange11"></td>
+  </tr>
+  <tr id="tr-location">
+   <td class="td-name">Location:</td>
+   <td class="td-value" id="location11"></td>
+  </tr>
+  <tr id="tr-language">
+   <td class="td-name">Language:</td>
+   <td class="td-value" id="language11"></td>
+  </tr>
+  <tr>
+   <td class="td-name">Result Total:</td>
+   <td class="td-value" id="n11"></td>
+  </tr>
+  <tr>
+   <td class="td-name">Retrieved:</td>
+   <td class="td-value" id="n12"></td>
+  </tr>
+  <tr>
+   <td class="td-name">Elapsed Time:</td>
+   <td class="td-value" id="n13"></td>
+  </tr>
+  <tr><td colspan="2"><hr class="pm-button-sep"></td></tr>
+  <tr>
+   <td colspan="2">
+    <div class="pm-button-bar">
+     <button id="cc-pb11" type="button" onClick="_processData(null, -2)">Pause query</button>
+     <button id="cc-pb13" type="button" onClick="newQuery(true)">Revise query</button>
+     <!--<button id="cc-pb12" type="button" onClick="saveQuery(true, 'save-query-pane')">Save query</button>-->
+     <button id="cc-pb12" type="button" onclick="window.open('history.xhtml', '1376959182017','width=700,height=500,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=0,left=0,top=0')">Save query</button>
+    </div>
+   </td>
+  </tr>
+ </table>
+</div>
+
+<p>&nbsp;

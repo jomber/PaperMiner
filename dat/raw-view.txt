@@ -1,0 +1,47 @@
+<h3>Raw Data View</h3>
+<div class="pane-container">
+ <table>
+  <tr>
+   <td>Records:
+    <div id="raw-list-container"></div>
+   </td>  
+   <td>Record:
+    <div id="raw-record-container"></div>
+    <div id="raw-ctl">
+     <table id="ctl-table">
+      <tr>
+       <td>
+        <div class="pm-button-bar">
+         <button id="savePdf" onclick="savePdfDocument()">Save Document</button>
+         <button id="rdv-pb3" onclick="locnEdit(true)">Edit Locations</button>
+         <button id="rdv-pb1" onclick="fixRecord()">Fix in TROVE</button>
+         <button id="rdv-pb2" onclick="refreshRecord()">Refresh Record</button>
+        </div>
+       </td>
+      </tr>
+     </table>
+    </div>
+   </td>
+  </tr>
+ </table> 
+    
+ <a id="fix-url" class="hidden" href="#" target="_blank" />
+ <form target="_top" method="post">   
+ 	<button id="rdv-pb4" class="ui-button" onclick="postData(json2string(m_resultSet));return false;">Generate raw result file</button>
+ 	<div id="downloadPlace" />
+ </form>
+ <p>&nbsp;
+ <div id="raw-rb-pane" align="center">
+  <input type="checkbox" id="raw-select-cb" onChange="_sortRaw(0)"> Restrict records to Map View Timeline marker range </input>
+  <p>Order by:
+  <input type="radio" name="raw-sort-rb" value="date" onChange="_sortRaw(1)"> Date </input>
+  &nbsp; &nbsp;
+  <input type="radio" name="raw-sort-rb" value="rel" onChange="_sortRaw(2)" > Relevance </input>
+  &nbsp; &nbsp;
+  <input type="radio" name="raw-sort-rb" value="src" onChange="_sortRaw(3)" > Source </input>
+  &nbsp; &nbsp;
+  <input type="radio" name="raw-sort-rb" value="trove" onChange="_sortRaw(4)" checked="true"  > Retrieve order </input>
+ </div>
+ 
+</div>
+ 
